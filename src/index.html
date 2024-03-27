@@ -1,46 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tauri App</title>
-    <script type="module" src="/main.js" defer></script>
-    <style>
-      .logo.vanilla:hover {
-        filter: drop-shadow(0 0 2em #ffe21c);
-      }
-    </style>
+    <title>2024 new year game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
   </head>
+  <body class="with-background">
+    <h1 class="main-title">С наступающим новым годом!🎄</h1>
+    <h2 class="year"><span>2024</span></h2>
+    <img class="player" src="images/santa-claus.png" />
+    <p class="description">
+      Накануне наступающего года зеленого дракона, помоги маленькому
+      <span class="game-hero">дракошке</span> преодолеть сугробы и попасть на
+      <span class="game-hero game-hero--target">новогоднюю вечеринку</span> ...
+    </p>
+    <button class="start-button" type="button">старт 🎮</button>
+    <a href="/controls.html"
+      ><img class="controls" src="images/settings.png"
+    /></a>
 
-  <body>
-    <div class="container">
-      <h1>Welcome to Tauri!</h1>
-
-      <div class="row">
-        <a href="https://tauri.app" target="_blank">
-          <img src="/assets/tauri.svg" class="logo tauri" alt="Tauri logo" />
-        </a>
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-          target="_blank"
-        >
-          <img
-            src="/assets/javascript.svg"
-            class="logo vanilla"
-            alt="JavaScript logo"
-          />
-        </a>
-      </div>
-
-      <p>Click on the Tauri logo to learn more about the framework</p>
-
-      <form class="row" id="greet-form">
-        <input id="greet-input" placeholder="Enter a name..." />
-        <button type="submit">Greet</button>
-      </form>
-
-      <p id="greet-msg"></p>
-    </div>
+    <canvas class="canvas hide"></canvas>
+    <img class="player-image hide" src="images/player.png" />
+    <img class="background-image hide" src="images/background.jpg" />
+    <img class="enemy-image hide" src="images/enemy.png" />
   </body>
 </html>
