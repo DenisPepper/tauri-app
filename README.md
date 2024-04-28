@@ -1,6 +1,6 @@
-# Tauri + React
+# Tauri + Solid
 
-This template should help get you started developing with Tauri and React in Vite.
+This template should help get you started developing with Tauri and Solid in Vite.
 
 ## Recommended IDE Setup
 
